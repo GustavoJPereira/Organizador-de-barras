@@ -29,16 +29,17 @@ body {
 
 .tela div {
     background-color: #ecced1;
+    transition: 1s;
 }
 
-.adicionar {
+.entrada {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
 }
 
-.adicionar input {
+.entrada input {
     border: none;
     border-radius: 10px;
     background-color: #ecced1;
@@ -49,7 +50,7 @@ body {
     font-size: 25px;
 }
 
-.adicionar button {
+.entrada button {
     border: none;
     border-radius: 10px;
     background-color: #ecced1;
