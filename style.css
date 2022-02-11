@@ -9,8 +9,9 @@ body {
     height: 100vh;
     background-color: #f9eff0;
 
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .tela {
@@ -28,4 +29,32 @@ body {
 
 .tela div {
     background-color: #ecced1;
+}
+
+.adicionar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.adicionar input {
+    border: none;
+    border-radius: 10px;
+    background-color: #ecced1;
+
+    width: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.adicionar button {
+    border: none;
+    border-radius: 10px;
+    background-color: #ecced1;
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 0 10px;
 }

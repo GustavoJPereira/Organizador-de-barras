@@ -1,4 +1,8 @@
 const TELA = document.querySelector('.tela');
+const BOTAO = document.querySelector('.adicionar button');
+const NOVONUMERO = document.querySelector('.adicionar input');
+var valorNovoNumero = NOVONUMERO.valueAsNumber;
+
 var lista = new Array(3, 1, 2, 12, 10, 15, 14, 2);
 
 var ladoBarras = 95 / lista.length;
@@ -35,3 +39,18 @@ function criarBarras() {
 }
 
 criarBarras();
+
+//Verifica o novo número e o coloca no arrey
+function verificarNumeroNovo() {
+    valorNovoNumero = NOVONUMERO.valueAsNumber;
+    lista.push(valorNovoNumero);
+    ladoBarras = 95 / lista.length;
+    descobrirMaior();
+
+    //tira todas as barras e as recria novamente com uma adição
+    TELA.innerHTML = '';
+    criarBarras();
+}
+
+// verifica o valor do input assim que o botão é clicado
+BOTAO.addEventListener('click', verificarNumeroNovo, false);
