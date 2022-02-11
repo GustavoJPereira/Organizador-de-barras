@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f9eff0;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.tela {
+    
+    width: calc(100vw - 50px);
+    height: calc(60vh - 20px);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    border-bottom: 10px #e5bec2 solid;
+    border-radius: 10px;
+}
+
+.tela div {
+    background-color: #ecced1;
+}
